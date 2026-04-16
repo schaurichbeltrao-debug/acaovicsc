@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Cartas do Jogo — Isso é Ultraprocessado?</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Baloo+2:wght@700;800&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+.print-btn {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.print-btn button {
+  background: #5C35CC;
+  color: white;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: 'Baloo 2', cursive;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.card {
+  width: 200px;
+  height: 240px;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 3px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.card .emoji {
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+.food-name {
+  font-family: 'Baloo 2', cursive;
+  font-size: 18px;
+  font-weight: 800;
+  color: #333;
+}
+
+.hint {
+  font-size: 11px;
+  margin-top: 6px;
+  color: #777;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="print-btn">
+  <button onclick="window.print()">🖨️ Imprimir</button>
+</div>
+
+<h1>🃏 Isso é Ultraprocessado?</h1>
+<div class="subtitle">Classifique os alimentos em grupos!</div>
+
+<div class="cards-grid">
+
+<div class="card"><span class="emoji">🍎</span><div class="food-name">Maçã</div><div class="hint">Direto do pé!</div></div>
+<div class="card"><span class="emoji">🥕</span><div class="food-name">Cenoura</div></div>
+<div class="card"><span class="emoji">🥚</span><div class="food-name">Ovo</div></div>
+<div class="card"><span class="emoji">🍌</span><div class="food-name">Banana</div></div>
+<div class="card"><span class="emoji">🍗</span><div class="food-name">Frango</div></div>
+<div class="card"><span class="emoji">🫘</span><div class="food-name">Feijão</div></div>
+
+<div class="card"><span class="emoji">🧀</span><div class="food-name">Queijo</div></div>
+<div class="card"><span class="emoji">🥫</span><div class="food-name">Atum</div></div>
+<div class="card"><span class="emoji">🍞</span><div class="food-name">Pão</div></div>
+<div class="card"><span class="emoji">🥛</span><div class="food-name">Iogurte</div></div>
+
+<div class="card"><span class="emoji">🥤</span><div class="food-name">Refrigerante</div></div>
+<div class="card"><span class="emoji">🍟</span><div class="food-name">Salgadinho</div></div>
+<div class="card"><span class="emoji">🍪</span><div class="food-name">Biscoito</div></div>
+<div class="card"><span class="emoji">🍫</span><div class="food-name">Achocolatado</div></div>
+<div class="card"><span class="emoji">🌭</span><div class="food-name">Salsicha</div></div>
+<div class="card"><span class="emoji">🧃</span><div class="food-name">Suco de caixinha</div></div>
+
+<div class="card"><span class="emoji">🍿</span><div class="food-name">Pipoca</div><div class="hint">O que vocês acham?</div></div>
+<div class="card"><span class="emoji">🍫</span><div class="food-name">Chocolate 70%</div><div class="hint">Analise os ingredientes!</div></div>
+
+</div>
+
+</body>
+</html>
